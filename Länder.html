@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS-Style.css">
+    <title>CO2-Fussabdruck</title>
+</head>
+<body>
+    <header>
+          <!--Quelle für Free-Logo "Logo CO2-Footprint": https://www.freepik.com/  -->
+        <div class="header-logo">
+            <img src="Logo CO2-Footprint4.png" alt="Logo" width="350" height="350"/>
+        </div>
+        <div class="header-title">
+            <h1>CO2-Fussabdruck</h1>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <br>
+                <li><a href="Länder.html">Länder</a></li>
+                <br>
+                <li><a href="Unternehmen.html">Unternehmen</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Länderübersicht</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                 </p>
+                 <input type="text" id="inputLand" onkeyup="LandFilter()" placeholder="Suche nach Land" title="Land eingeben">
+                 <table id="TabelleLand">
+                         <thead>
+                            <tr>
+                                <th data-col="Land">Land <span class="sort-arrow"></span></th>
+                                <th data-col="Anteil">Anteil CO2-Ausstoss in Prozent (%) <span class="sort-arrow"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>China</td>
+                                <td>30.90</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Land">USA</div></td>
+                                <td>13.49</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Land">Indien</div></td>
+                                <td>7.30</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Land">Russland</div></td>
+                                <td>4.73</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Land">Japan</div></td>
+                                <td>2.88</td>
+                            </tr>
+                            <tr>
+                                <td><div class="land">Iran</div></td>
+                                <td>2.02</td>
+                            <tr>
+                                <td><div class="Land">Deutschland</div></td>
+                                <td>1.82</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Land">Saudi-Arabien</div></td>
+                                <td>1.81</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Land">Indonesien</div></td>
+                                <td>1.67</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Land">Südkorea</div></td>
+                                <td>1.66</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    </main>
+    <footer>
+        <nav class="Footer-Navigation">
+            <ul>
+                <li><a href="Über uns.html">Über uns</a></li>
+                <li><a href="Impressum.html">Impressum</a></li>
+                <li><a href="Datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </nav>
+        @Copyright: 2023 Denis Jakupovic. Alle Rechte vorbehalten.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
