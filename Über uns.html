@@ -6,46 +6,58 @@
     <link rel="stylesheet" href="CSS-Style.css">
     <title>CO2-Fussabdruck</title>
 </head>
-<body>
+
+<body dir="ltr">
+
     <header>
           <!--Quelle für Free-Logo "Logo CO2-Footprint": https://www.freepik.com/  -->
-        <div id="Logo CO2-Footprint"><img src="Logo CO2-Footprint 3.png" width="200" height="200"></div>
-        <nav id="Navigation">
-            <ul>
-                <li><a href = "index.html">CO2-Fussabdruck</a></li>
-                <li><a href = "Länderübersicht.html">Länderübersicht</a></li>
-                <li><a href = "Unternehmen.html">Unternehmen</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <aside id="Hauptmenü"></aside>
-            <!--Hauptmenü platzieren-->
-        <section>
+          <div class="header-logo" id="header-logo">
+            <img src="Logo CO2-Footprint4.png" alt="Logo" width="350" height="350"/>
+        </div>
+        <div class="header-title">
             <h1>CO2-Fussabdruck</h1>
-                <p>
-                    Beim CO2-Fussabdruck handelt es sich um die gesamte Menge an Kohlendioxis (CO2) welche durch den Menschen verursacht wird. 
-                    Die Ursache für CO2-Ausstoss liegt sowohl in der Industrie wie auch in der Natur. Die Emissionen tragen zur globalen Erwärmung
-                    und dem Klimawandel bei. Dies liegt daran, dass CO2 ein Treibhausgast ist, welches die Temperatur der Erde erhöht.
-                    Es sind weitreichende Massnahmen notwendig, um den CO2-Ausstoss beziehungsweise unseren CO2-Fussabdruck zu reduzieren.
-                    Um den Klimawandel zu stoppen, sind Massnahmen notwendig. Um Massnahmen zu definieren, müssen wir an die Quelle des CO2-Fussabdruckes
-                    vorrücken.
-                    <br><br>
-                    Unsere Organisation beschäftigt sich intensiv mit dem Thema Klimawandel. Wir zeigen auf dieser Webseite transparent auf,
-                    welche Länder bzw. welche Unternehmen hauptsächlich für den CO2-Ausstoss verantwortlich sind.
-                </p>
-
-        </section>
-    </main>
-    <footer>
-        <nav id="Fuss-Navigation">
+        </div>
+        <nav class="global-nav">
             <ul>
-                <li><a href = "Über uns.html">Über uns</a></li>
-                <li><a href = "Impressum.html">Impressum</a></li>
-                <li><a href = "Datenschutz.html">Datenschutz</a></li>
-                <p>@Copyright: 2023 CO2-Fussabdruck</p>
+                <li><a href="index.html">Startseite</a></li>
+                <br>
+                <li><a href="Länder.html">Länder</a></li>
+                <br>
+                <li><a href="Unternehmen.html">Unternehmen</a></li>
             </ul>
         </nav>
+
+</header>
+
+<main>
+    <div class="menu">
+        <ul>
+            <li><a href="#header-logo">Gehe nach oben</a></li>
+            <br>
+            <li><a href="#Footer-Navigation">Gehe nach unten</a></li>
+        </ul>
+    </div>
+        <div class="content">
+            <h2>Über uns</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                 </p>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="Footer-Navigation" id="Footer-Navigation">
+            <ul>
+                <li><a href="Über uns.html">Über uns</a></li>
+                <li><a href="Impressum.html">Impressum</a></li>
+                <li><a href="Datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </nav> <br>
+        <p>@Copyright: 2023 Denis Jakupovic - Alle Rechte vorbehalten</p><br>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

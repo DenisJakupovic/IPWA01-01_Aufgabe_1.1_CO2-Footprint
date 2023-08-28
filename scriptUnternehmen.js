@@ -1,9 +1,9 @@
-// Funktion: Filtern nach Länder
-function LandFilter() {
+// Funktion: Filtern nach Unternehmen
+function UnternehmenFilter() {
     var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("inputLand");
+    input = document.getElementById("inputUnternehmen");
     filter = input.value.toUpperCase();
-    table = document.getElementById("TabelleLand");
+    table = document.getElementById("TabelleUnternehmen");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
@@ -18,23 +18,23 @@ function LandFilter() {
     }
 }
 
-// Funktion: Klick-Ereignis auf Spaltenüberschriften
+// Funktion: Klick-Ereignis auf Spaltenüberschriften für Unternehmenstabelle
 function enableSorting(table) {
     const headers = table.querySelectorAll('th');
 
     headers.forEach((header, index) => {
         header.addEventListener('click', () => {
-            sortTable(table, index);
+            sortUnternehmenTable(table, index);
         });
     });
 }
 
-// Funktion: Initialisierung Sortierfunktion für TabelleLand
-const table = document.getElementById('TabelleLand');
-enableSorting(table);
+// Funktion: Initialisierung Sortierfunktion für TabelleUnternehmen
+const tableUnternehmen = document.getElementById('TabelleUnternehmen');
+enableSorting(tableUnternehmen);
 
-// Funktion: Sortierung nach Länder
-function sortTable(table, column) {
+// Funktion: Sortierung nach Unternehmen
+function sortUnternehmenTable(table, column) {
     const tbody = table.querySelector('tbody');
     const rows = Array.from(tbody.querySelectorAll('tr'));
     const isAscending = table.classList.contains('ascending');
@@ -68,9 +68,9 @@ function sortTable(table, column) {
 }
 
 
- // JavaScript zum Überprüfen des inputLand-Felds auf String-Werte
- const inputLand = document.getElementById('inputLand');
- inputLand.addEventListener('input', function () {
+ // JavaScript zum Überprüfen des inputUnternehmen-Felds auf String-Werte
+ const inputUnternehmen = document.getElementById('inputUnternehmen');
+ inputUnternehmen.addEventListener('input', function () {
      if (!/^[a-zA-Z\s]*$/.test(this.value)) {
          this.value = '';
      }

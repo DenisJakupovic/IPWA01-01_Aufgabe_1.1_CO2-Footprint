@@ -6,38 +6,114 @@
     <link rel="stylesheet" href="CSS-Style.css">
     <title>CO2-Fussabdruck</title>
 </head>
-<body>
+
+<body dir="ltr">
+
     <header>
           <!--Quelle für Free-Logo "Logo CO2-Footprint": https://www.freepik.com/  -->
-        <div id="Logo CO2-Footprint"><img src="Logo CO2-Footprint 3.png" width="200" height="200"></div>
-        <nav id="Navigation">
+          <div class="header-logo" id="header-logo">
+            <img src="Logo CO2-Footprint4.png" alt="Logo" width="350" height="350"/>
+        </div>
+        <div class="header-title">
+            <h1>CO2-Fussabdruck</h1>
+        </div>
+        <nav class="global-nav">
             <ul>
-                <li><a href = "index.html">CO2-Fussabdruck</a></li>
-                <li><a href = "Länderübersicht.html">Länderübersicht</a></li>
-                <li><a href = "Unternehmen.html">Unternehmen</a></li>
+                <li><a href="index.html">Startseite</a></li>
+                <br>
+                <li><a href="Länder.html">Länder</a></li>
+                <br>
+                <li><a href="Unternehmen.html">Unternehmen</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <aside id="Hauptmenü"></aside>
-            <!--Hauptmenü platzieren-->
-        <section>
-            <h1>Unternehmen</h1>
-                <p>
-                    Auf dieser Seite wird der CO2-Ausstoss der einzelnen Unternehmen angezeigt.
-                </p>
 
-        </section>
+</header>
+
+<main>
+    <div class="menu">
+        <ul>
+            <li><a href="#header-logo">Gehe nach oben</a></li>
+            <br>
+            <li><a href="#Footer-Navigation">Gehe nach unten</a></li>
+        </ul>
+    </div>
+        <div class="content">
+            <h2>Übersicht Unternehmen</h2>
+                <p>
+                    Diese Übersicht zeigt die Auflistung der Top-10 Unternehmen mit dem grössten CO2-Ausstoss verglichen untereinander.
+                    <br><br>
+                    Es zeigt sich, dass es sich bei den Unternehmen hauptsächlich um Firmen der Ölförderung handelt. Gemessen wurden die 
+                    CO2-Emissionen der Jahre 1965-2017. Dies beudetet also, dass die Ölindustrie in den letzten 60 Jahren die grössten
+                    CO2-Emissionen verursacht hat.
+                    <br><br>
+                    Quelle: Statista 2023
+                 </p>
+                 <input type="text" id="inputUnternehmen" onkeyup="UnternehmenFilter()" placeholder="Suche nach Unternehmen" title="Unternehmen eingeben">
+                 <table id="TabelleUnternehmen">
+                         <thead>
+                            <tr>
+                                <th data-col="Unternehmen">Unternehmen <span class="sort-arrow"></span></th>
+                                <th data-col="Anteil">Anteil CO2-Ausstoss in Prozent (%) <span class="sort-arrow"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="Unternehmen">Saudi Aramco</div></td>
+                                <td>16.89</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Unternehmen">Chevron</div></td>
+                                <td>12.35</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Unternehmen">Gazprom</div></td>
+                                <td>12.32</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Unternehmen">ExxonMobil</div></td>
+                                <td>11.94</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Unternehmen">National Iranien Oil Co</div></td>
+                                <td>10.16</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Unternehmen">BP</div></td>
+                                <td>9.70</td>
+                            <tr>
+                                <td><div class="Unternehmen">Royal Dutch Shell</div></td>
+                                <td>9.11</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Unternehmen">Coal India</div></td>
+                                <td>6.59</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Unternehmen">Pemex</div></td>
+                                <td>6.46</td>
+                            </tr>
+                            <tr>
+                                <td><div class="Unternehmen">Petroleos de Venezuela</div></td>
+                                <td>4.49</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
     </main>
-    <footer>
-        <nav id="Fuss-Navigation">
+
+     <footer>
+        <nav class="Footer-Navigation" id="Footer-Navigation">
             <ul>
-                <li><a href = "Über uns.html">Über uns</a></li>
-                <li><a href = "Impressum.html">Impressum</a></li>
-                <li><a href = "Datenschutz.html">Datenschutz</a></li>
-                <p>@Copyright: 2023 CO2-Fussabdruck</p>
+                <li><a href="Über uns.html">Über uns</a></li>
+                <li><a href="Impressum.html">Impressum</a></li>
+                <li><a href="Datenschutz.html">Datenschutz</a></li>
             </ul>
-        </nav>
+        </nav> <br>
+        <p>@Copyright: 2023 Denis Jakupovic - Alle Rechte vorbehalten</p><br>
     </footer>
+
+    <script src="scriptUnternehmen.js"></script>
+
 </body>
+
 </html>

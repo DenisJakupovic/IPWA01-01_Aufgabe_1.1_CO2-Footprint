@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS-Style.css">
     <title>CO2-Fussabdruck</title>
-    <script src="script.js"></script>
 </head>
-<body>
+
+<body dir="ltr">
+
     <header>
           <!--Quelle für Free-Logo "Logo CO2-Footprint": https://www.freepik.com/  -->
-        <div class="header-logo">
+          <div class="header-logo" id="header-logo">
             <img src="Logo CO2-Footprint4.png" alt="Logo" width="350" height="350"/>
         </div>
         <div class="header-title">
             <h1>CO2-Fussabdruck</h1>
         </div>
-    </header>
-    <main>
-        <div class="menu">
+        <nav class="global-nav">
             <ul>
                 <li><a href="index.html">Startseite</a></li>
                 <br>
@@ -26,7 +25,18 @@
                 <br>
                 <li><a href="Unternehmen.html">Unternehmen</a></li>
             </ul>
-        </div>
+        </nav>
+
+</header>
+
+<main>
+    <div class="menu">
+        <ul>
+            <li><a href="#header-logo">Gehe nach oben</a></li>
+            <br>
+            <li><a href="#Footer-Navigation">Gehe nach unten</a></li>
+        </ul>
+    </div>
         <div class="content">
             <h2>Datenschutz</h2>
                 <p>
@@ -34,15 +44,20 @@
                  </p>
         </div>
     </main>
+
     <footer>
-        <nav class="Footer-Navigation">
+        <nav class="Footer-Navigation" id="Footer-Navigation">
             <ul>
                 <li><a href="Über uns.html">Über uns</a></li>
                 <li><a href="Impressum.html">Impressum</a></li>
                 <li><a href="Datenschutz.html">Datenschutz</a></li>
             </ul>
-        </nav>
-        @Copyright: 2023 Denis Jakupovic. Alle Rechte vorbehalten.
+        </nav> <br>
+        <p>@Copyright: 2023 Denis Jakupovic - Alle Rechte vorbehalten</p><br>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

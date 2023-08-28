@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="CSS-Style.css">
     <title>CO2-Fussabdruck</title>
 </head>
-<body>
+
+<body dir="ltr">
+
     <header>
           <!--Quelle für Free-Logo "Logo CO2-Footprint": https://www.freepik.com/  -->
-        <div class="header-logo">
+          <div class="header-logo" id="header-logo">
             <img src="Logo CO2-Footprint4.png" alt="Logo" width="350" height="350"/>
         </div>
         <div class="header-title">
             <h1>CO2-Fussabdruck</h1>
         </div>
-    </header>
-    <main>
-        <div class="menu">
+        <nav class="global-nav">
             <ul>
                 <li><a href="index.html">Startseite</a></li>
                 <br>
@@ -25,11 +25,28 @@
                 <br>
                 <li><a href="Unternehmen.html">Unternehmen</a></li>
             </ul>
-        </div>
+        </nav>
+
+</header>
+
+<main>
+    <div class="menu">
+        <ul>
+            <li><a href="#header-logo">Gehe nach oben</a></li>
+            <br>
+            <li><a href="#Footer-Navigation">Gehe nach unten</a></li>
+        </ul>
+    </div>
         <div class="content">
-            <h2>Länderübersicht</h2>
+            <h2>Übersicht Länder</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Diese Übersicht zeigt die CO2-Emissionen verglichen unter allen Ländern. Es lässt sich erkennen, dass insbesondere China mit über 30% den grössten Anteil
+                    der CO2-Emissionen verzeichnet. Da alle Top-10 Unternehmen mit dem grössten CO2-Ausstoss nicht aus China stammen, so ist die Ursache in China vermutlich in 
+                    anderen Faktoren zu suchen. Die grosse Einwohnerzahl sowie die hohe Produktion diverser Ware ist da sicherlich eine Ursache.
+                    <br><br>
+                    Auch andere Länder wie USA und Indien haben einien hohen CO2-Ausstoss. In Europa führt Deutschland mit 1.82% CO2-Ausstoss. 
+                    <br><br>
+                    Quelle: Statista 2023
                  </p>
                  <input type="text" id="inputLand" onkeyup="LandFilter()" placeholder="Suche nach Land" title="Land eingeben">
                  <table id="TabelleLand">
@@ -41,7 +58,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>China</td>
+                                <td><div class="Land">China</div></td>
                                 <td>30.90</td>
                             </tr>
                             <tr>
@@ -83,16 +100,20 @@
                     </table>
                 </div>
     </main>
-    <footer>
-        <nav class="Footer-Navigation">
+
+     <footer>
+        <nav class="Footer-Navigation" id="Footer-Navigation">
             <ul>
                 <li><a href="Über uns.html">Über uns</a></li>
                 <li><a href="Impressum.html">Impressum</a></li>
                 <li><a href="Datenschutz.html">Datenschutz</a></li>
             </ul>
-        </nav>
-        @Copyright: 2023 Denis Jakupovic. Alle Rechte vorbehalten.
+        </nav> <br>
+        <p>@Copyright: 2023 Denis Jakupovic - Alle Rechte vorbehalten</p><br>
     </footer>
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
