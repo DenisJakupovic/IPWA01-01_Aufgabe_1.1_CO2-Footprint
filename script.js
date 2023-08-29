@@ -75,3 +75,19 @@ function sortTable(table, column) {
          this.value = '';
      }
  });
+
+
+// Ermitttlung Schriftkultur vom Browser
+ function determineTextDirection() {
+    const textDirection = window.getComputedStyle(document.body, null).getPropertyValue('direction');
+
+    // Anpassen der Schriftkultur je nach Direction vom Browser
+    if (textDirection === 'rtl') {
+        document.body.setAttribute('dir', 'rtl');
+    } else {
+        document.body.setAttribute('dir', 'ltr');
+    }
+}
+
+// Funktion beim Laden der Seite aufrufen
+window.onload = determineTextDirection;
