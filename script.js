@@ -1,3 +1,13 @@
+// Prüfung Browsersprache
+const browserLang = window.navigator.language || window.navigator.userLanguage;
+
+// Prüfung ob Browsersprache arabisch oder hebräisch
+const isRTL = browserLang && (browserLang.toLowerCase() === 'ar' || browserLang.toLowerCase() === 'he');
+
+// Einfügen der Sprachkultur in body (css)
+document.body.classList.add(isRTL ? 'rtl' : 'ltr');
+
+
 // Funktion: Filtern nach Länder
 function LandFilter() {
     var input, filter, table, tr, td, i, txtValue;
@@ -68,7 +78,7 @@ function sortTable(table, column) {
 }
 
 
- // JavaScript zum Überprüfen des inputLand-Felds auf String-Werte
+ // Funktion - Nur String-Werte in Eingabefeld erlaubt
  const inputLand = document.getElementById('inputLand');
  inputLand.addEventListener('input', function () {
      if (!/^[a-zA-Z\s]*$/.test(this.value)) {
@@ -76,18 +86,12 @@ function sortTable(table, column) {
      }
  });
 
+// Funktion - Benutzereingaben in sicheren Code umwandeln (ergänzend zur Funktion das nur Strings erlaubt werden, falls die Werte erweitert werden)
+var userInput = document.getElementById("inputUnternehmen").value;
+var escapedUserInput = escapeHTML(userInput);
 
-// Ermitttlung Schriftkultur vom Browser
- function determineTextDirection() {
-    const textDirection = window.getComputedStyle(document.body, null).getPropertyValue('direction');
-
-    // Anpassen der Schriftkultur je nach Direction vom Browser
-    if (textDirection === 'rtl') {
-        document.body.setAttribute('dir', 'rtl');
-    } else {
-        document.body.setAttribute('dir', 'ltr');
-    }
+function escapeHTML(input) {
+  var div = document.createElement('div');
+  div.textContent = input;
+  return div.innerHTML;
 }
-
-// Funktion beim Laden der Seite aufrufen
-window.onload = determineTextDirection;

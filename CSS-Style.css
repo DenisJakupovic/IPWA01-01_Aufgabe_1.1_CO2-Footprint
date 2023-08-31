@@ -98,18 +98,17 @@ header {
 
 
 /* Anzeige Menü für andere Schriftkultur */
-body[dir="rtl"] .menu {
-    margin-left: 0;
-    margin-right: 20px;
-    float: right;
+body.ltr {
+    direction: ltr;
 }
 
-body[dir="ltr"] .menu {
-    margin-right: 0;
-    margin-left: 20px;
-    float: left;
+body.rtl {
+    direction: rtl;
 }
 
+.menu.rtl {
+    order: 1;
+}
 
 /* Hauptteil */
 main {
@@ -119,6 +118,7 @@ main {
     padding: 20px;
     color: whitesmoke;
 }
+
 
 .content {
     flex: 2;
