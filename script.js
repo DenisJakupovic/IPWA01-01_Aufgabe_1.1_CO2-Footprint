@@ -8,7 +8,7 @@ const isRTL = browserLang && (browserLang.toLowerCase() === 'ar' || browserLang.
 document.body.classList.add(isRTL ? 'rtl' : 'ltr');
 
 
-// Funktion: Filtern nach Länder
+// Funktion: Filtern nach Ländern
 function LandFilter() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("inputLand");
